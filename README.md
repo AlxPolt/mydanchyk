@@ -1,26 +1,37 @@
-# Adaptive Pickleball Platform (Render Deployment)
+# 🏓 Adaptive Pickleball Court Finder (in development)
 
-This is a real project developed for the Adaptive Pickleball Federation of Ukraine.
+This project is an internal tool being developed for the **Federation of Adaptive Pickleball of Ukraine**.  
+Цей проєкт — внутрішній інструмент для **Федерації адаптивного піклболу України**.
 
-## 🚀 Deployment (Render)
+---
 
-1. Create a repository on GitHub and push this code.
-2. Go to [https://render.com](https://render.com) and create a new Web Service.
-3. Select "Deploy from a GitHub repository".
-4. Set environment:
-   - Environment: Docker
-   - Port: `8000`
-5. Confirm and deploy.
+## 🚧 Status: In Active Development
 
-## 🔗 Endpoints
+> ⚠️ This application is currently under construction. Functionality and UI are subject to change.  
+> ⚠️ Додаток зараз перебуває на стадії розробки. Функціонал і інтерфейс можуть змінюватись.
 
-- `/` — homepage
-- `/courts/` — court list
-- `/recommendations?user_id=1` — recommended slots
+---
 
-## 🧠 Tech Stack
+## 🎯 Purpose
 
-- Python 3.11
-- FastAPI
-- Docker
-- Render free tier
+To provide:
+- 🔎 A unified system to **search for available pickleball courts** across Ukraine
+- 📊 **Centralised analytics** for court usage, load, and bookings
+- 🎾 A clear separation of **adaptive vs non-adaptive pickleball**
+- 🌐 **Redirection to court owners** for booking and payments (we don’t monetise)
+- 🧩 A future AI-powered **recommendation system** for best time/slots/courts
+
+---
+
+## ⚙️ Stack
+
+- **Backend:** Python, FastAPI
+- **Deployment:** Render.com
+- **In Progress:** GitHub Actions CI/CD, slot scrapers, analytics service
+
+---
+
+## 📌 Disclaimer
+
+This is a non-commercial, volunteer-driven project built to support inclusion and accessibility in Ukrainian sports.
+

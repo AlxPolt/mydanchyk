@@ -6,7 +6,7 @@ from app.routers import courts, recommendations
 
 app = FastAPI(title="Adaptive Pickleball Platform")
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
+#app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="app/templates")
 
 app.include_router(courts.router)
