@@ -1,9 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head><title>Pickleball Platform</title></head>
-<body>
-  <h1>Welcome to the Adaptive Pickleball Platform</h1>
-  <p><a href="/courts/">View Courts</a></p>
-  <p><a href="/recommendations?user_id=1">Get Recommendations</a></p>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="bg-white shadow-md rounded-lg p-6">
+    <h2 class="text-2xl font-bold mb-4">Available Pickleball Courts</h2>
+
+    <div id="courts-list" class="space-y-4">
+      {% for court in courts %}
+        <div class="border rounded p-4 bg-gray-100">
+          <h3 class="text-xl font-semibold text-blue-700">{{ court.name }}</h3>
+          <p><strong>Location:</strong> {{ court.location }}</p>
+          <p><strong>City:</strong> {{ court.city }}</p>
+          <p><strong>Adaptive Support:</strong> {{ "Yes" if court.adaptive_support else "No" }}</p>
+          {% if court.booking_url %}
+            <a href="{{ court.booking_url }}" target="_blank" class="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded inline-block mt-2">Book</a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

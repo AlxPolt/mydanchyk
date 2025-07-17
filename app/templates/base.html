@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adaptive Pickleball</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- HTMX -->
+  <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+  <!-- Optional: Add a little style to loading -->
+  <style>
+    [hx-trigger][hx-get]:not([hx-target])::after {
+      content: '⏳';
+      margin-left: 8px;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 min-h-screen p-6">
+  <div class="max-w-4xl mx-auto">
+    <header class="mb-6">
+      <h1 class="text-4xl font-extrabold text-blue-600">Adaptive Pickleball</h1>
+      <p class="text-lg text-gray-600">Find and book accessible pickleball courts</p>
+    </header>
+
+    {% block content %}
+    <!-- Content goes here -->
+    {% endblock %}
+
+    <footer class="mt-10 text-center text-gray-500 text-sm">
+      &copy; {{ year or "2025" }} Adaptive Pickleball Federation of Ukraine
+    </footer>
+  </div>
+</body>
+</html>

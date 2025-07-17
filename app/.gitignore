@@ -1,0 +1,13 @@
+# .gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.DS_Store
+.env
+.venv/
+venv/
+.idea/
+*.log
+echo -e "venv/\n*.pyc\n__pycache__/\n*.pem\n*.key\n*.pub\n*.log\n.env\n*.sqlite3" > .gitignore
+git add .gitignore
