@@ -34,7 +34,8 @@
 
 - **Backend (core services):** Python, FastAPI  
 - **Booking microservice:** Go (high-performance concurrency for booking workflows)  
-- **Frontend:** React + TypeScript (Vite)  
+- **Frontend:** React + TypeScript (Vite)
+- **Message broker:** Apache Kafka  
 - **Deployment:** Render.com  
 - **In Progress:** GitHub Actions CI/CD, slot scrapers, analytics service  
 
